@@ -24,13 +24,15 @@ class ViewController: UIViewController {
         
         let personA = Person(first: "Wing", last: "Chun")
         let personB = Person(first: "Lady", last: "Gaga")
-        let personC = Person(first: "Justin", last: "Bieber")
+        let personC = Person(first: "Muffin", last: "Bieber")
         
         people.append(personA)
         people.append(personB)
         people.append(personC)
         
-        NSUserDefaults.standardUserDefaults().setObject(people, forKey: "people")
+        let peopleData = NSKeyedArchiver.archivedDataWithRootObject(people)
+        
+        NSUserDefaults.standardUserDefaults().setObject(peopleData, forKey: "people")
         NSUserDefaults.standardUserDefaults().synchronize()
     }
 
@@ -55,6 +57,14 @@ class ViewController: UIViewController {
         favoriteLabel.text = "Favorite Color: Blue"
         NSUserDefaults.standardUserDefaults().setValue("Blue", forKey: "color")
         NSUserDefaults.standardUserDefaults().synchronize()
+        
+        if let loadPeople = NSUserDefaults.standardUserDefaults().objectForKey("people") as? NSData {
+            if let peopleArray = NSKeyedUnarchiver.unarchiveObjectWithData(loadPeople) as? [Person] {
+                for person in peopleArray {
+                    print(person.firstName)
+                }
+            }
+        }
     }
 }
 
