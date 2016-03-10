@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var favoriteLabel: UILabel!
+    
+    var people = [Person]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,17 @@ class ViewController: UIViewController {
         } else {
             favoriteLabel.text = "Pick a color!"
         }
+        
+        let personA = Person(first: "Wing", last: "Chun")
+        let personB = Person(first: "Lady", last: "Gaga")
+        let personC = Person(first: "Justin", last: "Bieber")
+        
+        people.append(personA)
+        people.append(personB)
+        people.append(personC)
+        
+        NSUserDefaults.standardUserDefaults().setObject(people, forKey: "people")
+        NSUserDefaults.standardUserDefaults().synchronize()
     }
 
     override func didReceiveMemoryWarning() {
