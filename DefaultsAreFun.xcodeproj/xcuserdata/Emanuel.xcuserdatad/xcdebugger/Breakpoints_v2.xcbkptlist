@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DefaultsAreFun/Person.swift"
+            timestampString = "479271560.872049"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "Person"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DefaultsAreFun.Person.__deallocating_deinit"
+                  moduleName = "DefaultsAreFun"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Emanuel/Desktop/Swift-Programming/DefaultsAreFun/DefaultsAreFun/Person.swift"
+                  timestampString = "479271560.880442"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DefaultsAreFun.Person.deinit"
+                  moduleName = "DefaultsAreFun"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Emanuel/Desktop/Swift-Programming/DefaultsAreFun/DefaultsAreFun/Person.swift"
+                  timestampString = "479271560.883528"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
